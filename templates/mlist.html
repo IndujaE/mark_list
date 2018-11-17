@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block mlistcontent %}
+
+<br>
+<div class="col-sm-12 mx-auto">
+        
+                        <div style="background: darkgrey;height: 50px"> <h2 style="text-align: center">MARKLIST</h2></div>
+                    <div class="row">
+                        <div class="col-sm-6">NAME :<p><b>{{getname}}</b></p></div>
+                        <div class="col-sm-6">REG NO :<p><b>{{getrno}}</b></p></div>
+                    </div> <br>
+                    
+                    <div class="row">
+                            <div class="col-sm-6">SEM :<p><b>{{getsem}}</b></p></div>
+                            <div class="col-sm-6">COLLEGE :<p><b>{{getcname}}</b></p></div>
+                        </div> <br>
+                    
+               <div class="row">
+                       <div class="col-sm-12">
+                               <table class="table">
+                                       <tr class="table-active">
+                                               <td>SUBJECT</td>
+                                               <td>MARK</td>
+                                               <td>TOTAL MARK</td>
+                                               <td>GRADE</td>
+                                       </tr>
+                                       <tr>
+                                               <td><p>{{getsub1}}</p></td>
+                                               <td><p>{{getmark1}}</p></td>
+                                               <td><p>{{gettm1}}</p></td>
+                                               <td><p>{{g1}}</p></td>
+                                       </tr>
+                                       <tr>
+                                                <td><p>{{getsub2}}</p></td>
+                                                <td><p>{{getmark2}}</p></td>
+                                                <td><p>{{gettm2}}</p></td>
+                                                <td><p>{{g2}}</p></td>
+                                       </tr>
+                                       <tr>
+                                                <td><p>{{getsub3}}</p></td>
+                                                <td><p>{{getmark3}}</p></td>
+                                                <td><p>{{gettm3}}</p></td>
+                                                <td><p>{{g3}}</p></td>
+                                       </tr>
+                                       <tr>
+                                                <td><p>{{getsub4}}</p></td>
+                                                <td><p>{{getmark4}}</p></td>
+                                                <td><p>{{gettm4}}</p></td>
+                                                <td><p>{{g4}}</p></td>
+                                       </tr>
+                               </table>
+
+                       </div>
+                       
+               </div>
+               <div class="row">
+                       <div class="col-sm-12" style="text-align: center">
+               <table class="table-border">
+
+                        <tr><h4>SEMESTER STATUS <b>,<p>{{status}}</p></b></h4></tr>
+
+               </table> 
+        </div>
+
+               </div>
+               
+                
+            
+</div>
+{% endblock %}

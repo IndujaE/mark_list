@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Marklist Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+     <!-- <style>
+        .col-sm-6{
+            color : ivory
+        }
+     </style> -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">MARKLIST GENERATOR</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="/create">CREATE</a></li>
+            
+            
+        </ul>
+    </nav>
+
+<div class="container"></div>
+<div class="row">
+    
+    <div class="jumbotron"><h3><i>How to use...?</i></h3><hr>
+        <ul >
+            <li>Select the "Create" tab on the Navigation Bar.</li>
+            <li>On that page there are some fields to enter <br>the details</li>
+            <li>All fields are mandatory, So you must fill all <br>the fields to get result</li>
+            <li>After filling the fields , click on the "PROCEED"<br> Button at the end of the form.</li>
+            <li>Then you can see a generated mark list with you <br>entered details.</li>
+            <li>Using this mark list you can check your semester<br> status like "Passed/Failed"</li>
+        </ul><br><br>
+        <h3><i>Grading Criteria...</i></h3><hr>
+
+        <div class="col-sm-12">
+                <table class="table">
+                        <tr>
+                            <td>MARKS</td>
+                            <td>GRADE</td>
+                        </tr>
+                        <tr>
+                            <td>>=90</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>>=80</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>>=70</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>>=60</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>below 60</td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+
+        </div>
+        
+    </div>
+       
+    <div class="col-sm-6">{%block mlistcontent%}
+
+            {% endblock %}</div>
+        <div class="jumbotron"></div>
+    
+</div>
+
+</body>
+</html>

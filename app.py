@@ -32,7 +32,7 @@ def glistfunc():
         gettm3=int(request.form['tmark3'])
 
         getsub4=request.form['subj4']
-        getmark4=int(request.form['mark2'])
+        getmark4=int(request.form['mark4'])
         gettm4=int(request.form['tmark4'])
 
         def grade(percent):
